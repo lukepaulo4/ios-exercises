@@ -50,10 +50,9 @@
     /* WORK HERE */
     
     NSPredicate *containsWorf = [NSPredicate predicateWithFormat:@"SELF CONTAINS[c] 'Worf'"];
-    [characterArray filteredArrayUsingPredicate:containsWorf];
+    NSArray *filteredArray = [characterArray filteredArrayUsingPredicate:containsWorf];
+    return (filteredArray.count > 0);
     
-    
-    return YES;
 
 }
 
