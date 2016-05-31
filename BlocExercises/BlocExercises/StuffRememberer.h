@@ -10,6 +10,18 @@
 
 @interface StuffRememberer : NSObject
 
+//@property (nonatomic, strong) NSMutableArray *arrayToRemember;
+//@property (nonatomic, copy) NSMutableArray *arrayToCopy;
+//@property (nonatomic, assign) CGFloat floatToRemember;
+
+
+
+//@property (nonatomic, copy) NSMutableArray *copiedArray;
+//@property (nonatomic, strong) NSMutableArray *rememberedArray;
+//@property (nonatomic, assign) CGFloat rememberedFloat;
+//
+
+
 /*
  
  In this class, there are three pairs of methods.
@@ -31,6 +43,7 @@
  
  @param arrayToRemember A mutable array.
  */
+
 - (void) rememberThisArrayForLater:(NSMutableArray *)arrayToRemember;
 
 /**
@@ -47,6 +60,7 @@
  
  @param arrayToCopy A mutable array.
  */
+
 - (void) copyThisArrayForLater:(NSMutableArray *)arrayToCopy;
 
 /**
@@ -63,6 +77,7 @@
  
  @param floatToRemember A float.
  */
+
 - (void) rememberThisFloatForLater:(CGFloat)floatToRemember;
 
 /**
